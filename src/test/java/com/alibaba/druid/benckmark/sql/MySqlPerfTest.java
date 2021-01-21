@@ -31,8 +31,8 @@ public class MySqlPerfTest extends TestCase {
 
     protected void setUp() throws Exception {
         sql = "SELECT * FROM T";
-        sql = "SELECT ID, NAME, AGE FROM USER WHERE ID = '123' OR NAME IS NOT NULL ORDER BY ID DESC";
-
+        sql = "SELECT ID, NAME, AGE FROM USER WHERE ID = '123' OR NAME IS NOT NULL ORDER BY ID DESC LIMIT 1";
+        sql = "select a.a, b.b from a join b on a.c=b.c";
 //        sql = Utils.readFromResource("benchmark/sql/ob_sql.txt");
     }
 
